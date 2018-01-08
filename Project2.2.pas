@@ -9,7 +9,7 @@ uses
 begin
 if ParamStr(1) = '/ih' then
   begin
-    MessageBox(0,'Сделано в HiAsm.','HiAsm Info',MB_OK);
+    MessageBox(0,'kiro.','Info',MB_OK);
     Halt;
   end;
   ClassMain := TClassMainForm_24C78D0.Create;
