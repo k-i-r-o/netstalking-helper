@@ -1,0 +1,436 @@
+unit hiMainForm_24C78D0;
+
+interface
+
+uses 
+  Windows,
+  hiMainForm,
+  hiChildPanel,
+  hiCheckBoxRush,
+  hiMinMaxSize,
+  hiLabel,
+  hiHub,
+  hiChildPanel_25382C0,
+  hiChildPanel_2538790,
+kol,Share;
+
+type
+  TClassMainForm_24C78D0 = class
+   public
+  MainForm_24C78D0:THIMainForm;
+  ChildPanel_25382C0:THIChildPanel;
+  CheckBoxRush_24CB930:THICheckBoxRush;
+  MinMaxSize_24C0208:THIMinMaxSize;
+  CheckBoxRush_24CBBB0:THICheckBoxRush;
+  Label_24CBC50:THILabel;
+  Label_24CBCF0:THILabel;
+  Label_24CBD90:THILabel;
+  Hub_2538630:THIHub;
+  Label_24CBE30:THILabel;
+  Hub_25386E0:THIHub;
+  ChildPanel_2538790:THIChildPanel;
+    constructor Create;
+    destructor Destroy; override;
+  end;
+
+var
+  ClassMain:TClassMainForm_24C78D0;
+
+implementation
+
+constructor TClassMainForm_24C78D0.Create;
+begin
+  inherited;
+  ClassMain := self;
+ //MainForm_24C78D0 - Main
+  MainForm_24C78D0 := THIMainForm.Create(nil);
+  with MainForm_24C78D0 do begin
+    ManFlags := 0;
+    _prop_Left := 0;
+    _prop_Top := 0;
+    _prop_Width := 962;
+    _prop_Height := 558;
+    _prop_Align := caNone;
+    _prop_Color := -16777201;
+    _prop_Font := hiCreateFont('MS Sans Serif',8,0,0,1);
+    _prop_ParentFont := False;
+    _prop_Visible := True;
+    _prop_Enabled := True;
+    _prop_Cursor := crDefault;
+    _prop_TabOrder := 0;
+    _prop_Ctl3D := 1;
+    _prop_WinStyle := 0;
+    _prop_Name := PChar('Helper'#0);
+    _prop_Hint := PChar(#0);
+    _prop_WidthScale := 0;
+    _prop_HeightScale := 0;
+    _prop_AlphaBlendValue := 255;
+    _prop_Caption := PChar('Netstalking-helper'#0);
+    _prop_BorderStyle := 2;
+    _prop_WindowsState := 0;
+    _prop_Icon := LoadIcon(hInstance,'ASMA');
+    _prop_TaskBar := 0;
+    _prop_DragForm := False;
+    _prop_KeyPreview := True;
+    _prop_TransparentColor := 16777215;
+    _prop_SavePosName := PChar(#0);
+    _prop_MouseCapture := False;
+    _prop_ClientSize := False;
+    _prop_Position := poNone;
+    _prop_ShiftLeft := 0;
+    _prop_ShiftTop := 0;
+    Init;
+  end;
+//Init for ChildPanel;
+  ChildPanel_25382C0 := THIChildPanel.Create(MainForm_24C78D0.Control);
+  with ChildPanel_25382C0 do begin
+    _prop_FirstUsage := False;
+    Init;
+    ParentClass := Self;
+    SetLength(Events,0);
+    SetLength(Datas, 0);
+  end;
+//Init for CheckBoxRush;
+  CheckBoxRush_24CB930 := THICheckBoxRush.Create(MainForm_24C78D0.Control);
+  with CheckBoxRush_24CB930 do begin
+    ManFlags := 0;
+    _prop_Left := 10;
+    _prop_Top := 40;
+    _prop_Width := 20;
+    _prop_Height := 20;
+    _prop_Align := caNone;
+    _prop_Color := -16777201;
+    _prop_Font := hiCreateFont('MS Sans Serif',8,0,0,1);
+    _prop_ParentFont := False;
+    _prop_Visible := True;
+    _prop_Enabled := True;
+    _prop_Cursor := crDefault;
+    _prop_TabOrder := 0;
+    _prop_Ctl3D := 1;
+    _prop_WinStyle := 0;
+    _prop_Name := PChar(#0);
+    _prop_Hint := PChar(#0);
+    _prop_WidthScale := 0;
+    _prop_HeightScale := 0;
+    _prop_ColorFrom := 16777215;
+    _prop_ColorTo := 15780518;
+    _prop_ColorText := 0;
+    _prop_BorderColor := 10789024;
+    _prop_ColorShadow := 16777215;
+    _prop_ShadowOffset := 0;
+    _prop_GradientStyle := 5;
+    _prop_BorderWidth := 1;
+    _prop_ColorFromOver := 16777215;
+    _prop_ColorToOver := 15780518;
+    _prop_ColorTextOver := 0;
+    _prop_BorderColorOver := 8421504;
+    _prop_ColorShadowOver := 8421504;
+    _prop_ShadowOffsetOver := 1;
+    _prop_GradientStyleOver := 5;
+    _prop_BorderWidthOver := 1;
+    _prop_ColorFromDown := 15780518;
+    _prop_ColorToDown := 16777215;
+    _prop_ColorTextDown := 0;
+    _prop_BorderColorDown := 10789024;
+    _prop_ColorShadowDown := 8421504;
+    _prop_ShadowOffsetDown := -1;
+    _prop_GradientStyleDown := 5;
+    _prop_BorderWidthDown := 1;
+    _prop_ColorFromDis := 16777215;
+    _prop_ColorToDis := 8421504;
+    _prop_ColorTextDis := 8421504;
+    _prop_BorderColorDis := 10789024;
+    _prop_ColorShadowDis := 16777215;
+    _prop_ShadowOffsetDis := 1;
+    _prop_GradientStyleDis := 5;
+    _prop_BorderWidthDis := 1;
+    _prop_UpdateSpeed := 2;
+    _prop_Transparent := False;
+    _prop_Checked := 1;
+    _prop_Caption := PChar(#0);
+    _prop_CheckMetric := 15;
+    _prop_ColorCheck := 15954028;
+    Init;
+  end;
+//Init for MinMaxSize;
+  MinMaxSize_24C0208 := THIMinMaxSize.Create(MainForm_24C78D0.Control);
+  with MinMaxSize_24C0208 do begin
+    _prop_EnabledMinMax := True;
+    _prop_ControlMaxLeftTop := False;
+    _prop_MaxLeft := 0;
+    _prop_MaxTop := 0;
+    _prop_MinWidth := 962;
+    _prop_MinHeight := 558;
+    _prop_MaxWidth := 962;
+    _prop_MaxHeight := 558;
+  end;
+//Init for CheckBoxRush;
+  CheckBoxRush_24CBBB0 := THICheckBoxRush.Create(MainForm_24C78D0.Control);
+  with CheckBoxRush_24CBBB0 do begin
+    ManFlags := 0;
+    _prop_Left := 10;
+    _prop_Top := 70;
+    _prop_Width := 20;
+    _prop_Height := 20;
+    _prop_Align := caNone;
+    _prop_Color := -16777201;
+    _prop_Font := hiCreateFont('MS Sans Serif',8,0,0,1);
+    _prop_ParentFont := False;
+    _prop_Visible := True;
+    _prop_Enabled := True;
+    _prop_Cursor := crDefault;
+    _prop_TabOrder := 0;
+    _prop_Ctl3D := 1;
+    _prop_WinStyle := 0;
+    _prop_Name := PChar(#0);
+    _prop_Hint := PChar(#0);
+    _prop_WidthScale := 0;
+    _prop_HeightScale := 0;
+    _prop_ColorFrom := 16777215;
+    _prop_ColorTo := 15780518;
+    _prop_ColorText := 0;
+    _prop_BorderColor := 10789024;
+    _prop_ColorShadow := 16777215;
+    _prop_ShadowOffset := 0;
+    _prop_GradientStyle := 5;
+    _prop_BorderWidth := 1;
+    _prop_ColorFromOver := 16777215;
+    _prop_ColorToOver := 15780518;
+    _prop_ColorTextOver := 0;
+    _prop_BorderColorOver := 8421504;
+    _prop_ColorShadowOver := 8421504;
+    _prop_ShadowOffsetOver := 1;
+    _prop_GradientStyleOver := 5;
+    _prop_BorderWidthOver := 1;
+    _prop_ColorFromDown := 15780518;
+    _prop_ColorToDown := 16777215;
+    _prop_ColorTextDown := 0;
+    _prop_BorderColorDown := 10789024;
+    _prop_ColorShadowDown := 8421504;
+    _prop_ShadowOffsetDown := -1;
+    _prop_GradientStyleDown := 5;
+    _prop_BorderWidthDown := 1;
+    _prop_ColorFromDis := 16777215;
+    _prop_ColorToDis := 8421504;
+    _prop_ColorTextDis := 8421504;
+    _prop_BorderColorDis := 10789024;
+    _prop_ColorShadowDis := 16777215;
+    _prop_ShadowOffsetDis := 1;
+    _prop_GradientStyleDis := 5;
+    _prop_BorderWidthDis := 1;
+    _prop_UpdateSpeed := 2;
+    _prop_Transparent := False;
+    _prop_Checked := 1;
+    _prop_Caption := PChar(#0);
+    _prop_CheckMetric := 15;
+    _prop_ColorCheck := 15954028;
+    Init;
+  end;
+//Init for Label;
+  Label_24CBC50 := THILabel.Create(MainForm_24C78D0.Control);
+  with Label_24CBC50 do begin
+    ManFlags := 0;
+    _prop_Left := 30;
+    _prop_Top := 40;
+    _prop_Width := 48;
+    _prop_Height := 24;
+    _prop_Align := caNone;
+    _prop_Color := -16777201;
+    _prop_Font := hiCreateFont('MS Sans Serif',13,1,0,1);
+    _prop_ParentFont := False;
+    _prop_Visible := True;
+    _prop_Enabled := True;
+    _prop_Cursor := crDefault;
+    _prop_TabOrder := 0;
+    _prop_Ctl3D := 1;
+    _prop_WinStyle := 0;
+    _prop_Name := PChar(#0);
+    _prop_Hint := PChar(#0);
+    _prop_WidthScale := 0;
+    _prop_HeightScale := 0;
+    _prop_ModeSp := spNone;
+    _prop_SizeSp := 4;
+    _prop_ColorSp := -16777201;
+    _prop_MinOwn := 0;
+    _prop_MinRest := 0;
+    _prop_Transparent := False;
+    _prop_Caption := PChar('hydra'#0);
+    _prop_AutoSize := True;
+    _prop_Alignment := taLeft;
+    _prop_ColorHover := 0;
+    _prop_Underline := False;
+    Init;
+  end;
+//Init for Label;
+  Label_24CBCF0 := THILabel.Create(MainForm_24C78D0.Control);
+  with Label_24CBCF0 do begin
+    ManFlags := 0;
+    _prop_Left := 30;
+    _prop_Top := 70;
+    _prop_Width := 48;
+    _prop_Height := 24;
+    _prop_Align := caNone;
+    _prop_Color := -16777201;
+    _prop_Font := hiCreateFont('MS Sans Serif',13,1,0,1);
+    _prop_ParentFont := False;
+    _prop_Visible := True;
+    _prop_Enabled := True;
+    _prop_Cursor := crDefault;
+    _prop_TabOrder := 0;
+    _prop_Ctl3D := 1;
+    _prop_WinStyle := 0;
+    _prop_Name := PChar(#0);
+    _prop_Hint := PChar(#0);
+    _prop_WidthScale := 0;
+    _prop_HeightScale := 0;
+    _prop_ModeSp := spNone;
+    _prop_SizeSp := 4;
+    _prop_ColorSp := -16777201;
+    _prop_MinOwn := 0;
+    _prop_MinRest := 0;
+    _prop_Transparent := False;
+    _prop_Caption := PChar('nmap'#0);
+    _prop_AutoSize := True;
+    _prop_Alignment := taLeft;
+    _prop_ColorHover := 0;
+    _prop_Underline := False;
+    Init;
+  end;
+//Init for Label;
+  Label_24CBD90 := THILabel.Create(MainForm_24C78D0.Control);
+  with Label_24CBD90 do begin
+    ManFlags := 0;
+    _prop_Left := 30;
+    _prop_Top := 40;
+    _prop_Width := 48;
+    _prop_Height := 24;
+    _prop_Align := caNone;
+    _prop_Color := -16777201;
+    _prop_Font := hiCreateFont('MS Sans Serif',13,1,255,1);
+    _prop_ParentFont := False;
+    _prop_Visible := False;
+    _prop_Enabled := True;
+    _prop_Cursor := crDefault;
+    _prop_TabOrder := 0;
+    _prop_Ctl3D := 1;
+    _prop_WinStyle := 0;
+    _prop_Name := PChar(#0);
+    _prop_Hint := PChar(#0);
+    _prop_WidthScale := 0;
+    _prop_HeightScale := 0;
+    _prop_ModeSp := spNone;
+    _prop_SizeSp := 4;
+    _prop_ColorSp := -16777201;
+    _prop_MinOwn := 0;
+    _prop_MinRest := 0;
+    _prop_Transparent := False;
+    _prop_Caption := PChar('hydra '#0);
+    _prop_AutoSize := True;
+    _prop_Alignment := taLeft;
+    _prop_ColorHover := 0;
+    _prop_Underline := False;
+    Init;
+  end;
+//Init for Hub;
+  Hub_2538630 := THIHub.Create;
+  with Hub_2538630 do begin
+    _prop_InCount := 1;
+    _prop_OutCount := 2;
+  end;
+//Init for Label;
+  Label_24CBE30 := THILabel.Create(MainForm_24C78D0.Control);
+  with Label_24CBE30 do begin
+    ManFlags := 0;
+    _prop_Left := 30;
+    _prop_Top := 70;
+    _prop_Width := 48;
+    _prop_Height := 24;
+    _prop_Align := caNone;
+    _prop_Color := -16777201;
+    _prop_Font := hiCreateFont('MS Sans Serif',13,1,255,1);
+    _prop_ParentFont := False;
+    _prop_Visible := False;
+    _prop_Enabled := True;
+    _prop_Cursor := crDefault;
+    _prop_TabOrder := 0;
+    _prop_Ctl3D := 1;
+    _prop_WinStyle := 0;
+    _prop_Name := PChar(#0);
+    _prop_Hint := PChar(#0);
+    _prop_WidthScale := 0;
+    _prop_HeightScale := 0;
+    _prop_ModeSp := spNone;
+    _prop_SizeSp := 4;
+    _prop_ColorSp := -16777201;
+    _prop_MinOwn := 0;
+    _prop_MinRest := 0;
+    _prop_Transparent := False;
+    _prop_Caption := PChar('nmap'#0);
+    _prop_AutoSize := True;
+    _prop_Alignment := taLeft;
+    _prop_ColorHover := 0;
+    _prop_Underline := False;
+    Init;
+  end;
+//Init for Hub;
+  Hub_25386E0 := THIHub.Create;
+  with Hub_25386E0 do begin
+    _prop_InCount := 1;
+    _prop_OutCount := 2;
+  end;
+//Init for ChildPanel;
+  ChildPanel_2538790 := THIChildPanel.Create(MainForm_24C78D0.Control);
+  with ChildPanel_2538790 do begin
+    _prop_FirstUsage := False;
+    Init;
+    ParentClass := Self;
+    SetLength(Events,0);
+    SetLength(Datas, 0);
+  end;
+ //%multi%
+ //Make all connection in scheme
+  CheckBoxRush_24CB930._event_onCheck      := _DoEvent(Hub_2538630.doEvent,0);
+  CheckBoxRush_24CBBB0._event_onCheck      := _DoEvent(Hub_25386E0.doEvent,0);
+  Hub_2538630.onEvent[0]                   := _DoEvent(Label_24CBD90._work_doVisible,1);
+  Hub_2538630.onEvent[1]                   := _DoEvent(ChildPanel_25382C0.doWork,0);
+  Hub_25386E0.onEvent[0]                   := _DoEvent(Label_24CBE30._work_doVisible,1);
+  Hub_25386E0.onEvent[1]                   := _DoEvent(ChildPanel_2538790.doWork,0);
+  MainForm_24C78D0._prop_HintManager := nil;
+  MainForm_24C78D0._prop_Layout := nil;
+  MainForm_24C78D0._prop_TransparentManager := nil;
+  MainForm_24C78D0._prop_FormFastening := nil;
+  ChildPanel_25382C0.OnCreate := Create_hiChildPanel_25382C0;
+  CheckBoxRush_24CB930._prop_HintManager := nil;
+  CheckBoxRush_24CB930._prop_Layout := nil;
+  CheckBoxRush_24CBBB0._prop_HintManager := nil;
+  CheckBoxRush_24CBBB0._prop_Layout := nil;
+  Label_24CBC50._prop_HintManager := nil;
+  Label_24CBC50._prop_Layout := nil;
+  Label_24CBCF0._prop_HintManager := nil;
+  Label_24CBCF0._prop_Layout := nil;
+  Label_24CBD90._prop_HintManager := nil;
+  Label_24CBD90._prop_Layout := nil;
+  Label_24CBE30._prop_HintManager := nil;
+  Label_24CBE30._prop_Layout := nil;
+  ChildPanel_2538790.OnCreate := Create_hiChildPanel_2538790;
+  MainForm_24C78D0.Control.Tabulate;
+end;
+
+destructor TClassMainForm_24C78D0.Destroy;
+begin
+  ChildPanel_2538790.Destroy;
+  Hub_25386E0.Destroy;
+  Label_24CBE30.Destroy;
+  Hub_2538630.Destroy;
+  Label_24CBD90.Destroy;
+  Label_24CBCF0.Destroy;
+  Label_24CBC50.Destroy;
+  CheckBoxRush_24CBBB0.Destroy;
+  MinMaxSize_24C0208.Destroy;
+  CheckBoxRush_24CB930.Destroy;
+  ChildPanel_25382C0.Destroy;
+  MainForm_24C78D0.Destroy;
+  inherited;
+end;
+
+end.
