@@ -10,7 +10,6 @@ uses
   hiStrCat,
   hiButton,
   hiClipboardHook,
-  hiComboBox,
   hiHub,
   hiTimer,
   hiMultiBase,
@@ -44,7 +43,6 @@ TClassChildPanel_2538790 = class(TClassMultiBase)
   Edit_24CC8D0:THIEdit;
   ClipboardHook_24C0630:THIClipboardHook;
   Edit_24CC970:THIEdit;
-  ComboBox_24CCA10:THIComboBox;
   StrCat_24C06C8:THIStrCat;
   Edit_24CCAB0:THIEdit;
   Edit_24CCB50:THIEdit;
@@ -61,8 +59,6 @@ TClassChildPanel_2538790 = class(TClassMultiBase)
   Hub_2538840:THIHub;
   Edit_24CC510:THIEdit;
   StrCat_24C0928:THIStrCat;
-  Edit_24CD230:THIEdit;
-  Button_24CD2D0:THIButton;
   StrCat_24C09C0:THIStrCat;
   Hub_25388F0:THIHub;
   StrCat_24C0A58:THIStrCat;
@@ -121,8 +117,8 @@ begin
     ManFlags := 0;
     _prop_Left := 165;
     _prop_Top := 20;
-    _prop_Width := 756;
-    _prop_Height := 382;
+    _prop_Width := 750;
+    _prop_Height := 375;
     _prop_Align := caNone;
     _prop_Color := -16777201;
     _prop_Font := hiCreateFont('MS Sans Serif',8,0,0,1);
@@ -133,7 +129,7 @@ begin
     _prop_TabOrder := 0;
     _prop_Ctl3D := 1;
     _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
+    _prop_Name := PChar('FormTableNmap'#0);
     _prop_Hint := PChar(#0);
     _prop_WidthScale := 0;
     _prop_HeightScale := 0;
@@ -240,7 +236,7 @@ begin
   Button_24CC0B0 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CC0B0 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 20;
     _prop_Width := 80;
     _prop_Height := 20;
@@ -267,7 +263,7 @@ begin
   Button_24CC150 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CC150 do begin
     ManFlags := 0;
-    _prop_Left := 55;
+    _prop_Left := 85;
     _prop_Top := 85;
     _prop_Width := 40;
     _prop_Height := 20;
@@ -372,7 +368,7 @@ begin
   Button_24CC330 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CC330 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 85;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -441,7 +437,7 @@ begin
   Button_24CC470 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CC470 do begin
     ManFlags := 0;
-    _prop_Left := 55;
+    _prop_Left := 85;
     _prop_Top := 110;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -468,7 +464,7 @@ begin
   Button_24CC5B0 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CC5B0 do begin
     ManFlags := 0;
-    _prop_Left := 100;
+    _prop_Left := 130;
     _prop_Top := 85;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -495,7 +491,7 @@ begin
   Button_24CC650 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CC650 do begin
     ManFlags := 0;
-    _prop_Left := 135;
+    _prop_Left := 165;
     _prop_Top := 85;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -522,7 +518,7 @@ begin
   Button_24CC6F0 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CC6F0 do begin
     ManFlags := 0;
-    _prop_Left := 170;
+    _prop_Left := 200;
     _prop_Top := 85;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -713,38 +709,6 @@ begin
     _prop_ClearAfterEnter := True;
     Init;
   end;
-//Init for ComboBox;
-  ComboBox_24CCA10 := THIComboBox.Create(Panel_24CBED0.Control);
-  with ComboBox_24CCA10 do begin
-    ManFlags := 0;
-    _prop_Left := 70;
-    _prop_Top := 320;
-    _prop_Width := 75;
-    _prop_Height := 21;
-    _prop_Align := caNone;
-    _prop_Color := -16777211;
-    _prop_Font := hiCreateFont('MS Sans Serif',8,0,0,1);
-    _prop_ParentFont := False;
-    _prop_Visible := True;
-    _prop_Enabled := True;
-    _prop_Cursor := crDefault;
-    _prop_TabOrder := 0;
-    _prop_Ctl3D := 1;
-    _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
-    _prop_Hint := PChar('—ервис'#0);
-    _prop_WidthScale := 0;
-    _prop_HeightScale := 0;
-    _prop_FileName := PChar(#0);
-    _prop_Strings := PChar(' http-get'#13#10' ssh'#13#10' ftp'#0);
-    _prop_AddType := 0;
-    _prop_Text := PChar('ComboBox'#0);
-    _prop_DataType := 1;
-    _prop_ReadOnly := 0;
-    _prop_Sort := False;
-    _prop_ItemHeight := 20;
-    Init;
-  end;
 //Init for StrCat;
   StrCat_24C06C8 := THIStrCat.Create;
   with StrCat_24C06C8 do begin
@@ -791,7 +755,7 @@ begin
   Edit_24CCB50 := THIEdit.Create(Panel_24CBED0.Control);
   with Edit_24CCB50 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 60;
     _prop_Width := 115;
     _prop_Height := 20;
@@ -827,7 +791,7 @@ begin
   Button_24CCBF0 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CCBF0 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 110;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -854,7 +818,7 @@ begin
   Edit_24CCC90 := THIEdit.Create(Panel_24CBED0.Control);
   with Edit_24CCC90 do begin
     ManFlags := 0;
-    _prop_Left := 175;
+    _prop_Left := 205;
     _prop_Top := 60;
     _prop_Width := 50;
     _prop_Height := 20;
@@ -890,7 +854,7 @@ begin
   Button_24CCD30 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CCD30 do begin
     ManFlags := 0;
-    _prop_Left := 135;
+    _prop_Left := 165;
     _prop_Top := 60;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -916,7 +880,7 @@ begin
   Button_24CCDD0 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CCDD0 do begin
     ManFlags := 0;
-    _prop_Left := 225;
+    _prop_Left := 255;
     _prop_Top := 60;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -1113,69 +1077,6 @@ begin
     _prop_Str1 := PChar(#0);
     _prop_Str2 := PChar(#0);
   end;
-//Init for Edit;
-  Edit_24CD230 := THIEdit.Create(Panel_24CBED0.Control);
-  with Edit_24CD230 do begin
-    ManFlags := 0;
-    _prop_Left := 70;
-    _prop_Top := 345;
-    _prop_Width := 220;
-    _prop_Height := 20;
-    _prop_Align := caNone;
-    _prop_Color := -16777211;
-    _prop_Font := hiCreateFont('MS Sans Serif',8,0,0,1);
-    _prop_ParentFont := False;
-    _prop_Visible := True;
-    _prop_Enabled := True;
-    _prop_Cursor := crDefault;
-    _prop_TabOrder := 0;
-    _prop_Ctl3D := 0;
-    _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
-    _prop_Hint := PChar('ѕуть, который закрыт дл€ нас запросом пары логин:пароль /example/'#0);
-    _prop_WidthScale := 0;
-    _prop_HeightScale := 0;
-    _prop_ModeSp := spNone;
-    _prop_SizeSp := 4;
-    _prop_ColorSp := -16777201;
-    _prop_MinOwn := 0;
-    _prop_MinRest := 0;
-    _prop_Text := PChar('/example/'#0);
-    _prop_Alignment := 0;
-    _prop_DataType := Text;
-    _prop_Password := False;
-    _prop_ReadOnly := False;
-    _prop_MaxLenField := 0;
-    _prop_ClearAfterEnter := True;
-    Init;
-  end;
-//Init for Button;
-  Button_24CD2D0 := THIButton.Create(Panel_24CBED0.Control);
-  with Button_24CD2D0 do begin
-    ManFlags := 0;
-    _prop_Left := 290;
-    _prop_Top := 345;
-    _prop_Width := 40;
-    _prop_Height := 20;
-    _prop_Align := caNone;
-    _prop_Font := hiCreateFont('MS Sans Serif',8,0,0,1);
-    _prop_ParentFont := False;
-    _prop_Visible := True;
-    _prop_Enabled := True;
-    _prop_Cursor := crDefault;
-    _prop_TabOrder := 0;
-    _prop_Ctl3D := 1;
-    _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
-    _prop_Hint := PChar('ѕуть, который закрыт дл€ нас запросом пары логин:пароль /example/'#0);
-    _prop_WidthScale := 0;
-    _prop_HeightScale := 0;
-    _prop_Caption := PChar('Paste'#0);
-    _prop_Data := _DoData(PChar(' '#0));
-    _prop_Flat := False;
-    _prop_DefaultBtn := False;
-    Init;
-  end;
 //Init for StrCat;
   StrCat_24C09C0 := THIStrCat.Create;
   with StrCat_24C09C0 do begin
@@ -1267,7 +1168,7 @@ begin
   Button_24CD5F0 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CD5F0 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 135;
     _prop_Width := 50;
     _prop_Height := 20;
@@ -1294,7 +1195,7 @@ begin
   Button_24CD690 := THIButton.Create(Panel_24CBED0.Control);
   with Button_24CD690 do begin
     ManFlags := 0;
-    _prop_Left := 75;
+    _prop_Left := 105;
     _prop_Top := 135;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -1629,7 +1530,7 @@ begin
   Button_4649190 := THIButton.Create(Panel_24CBED0.Control);
   with Button_4649190 do begin
     ManFlags := 0;
-    _prop_Left := 90;
+    _prop_Left := 120;
     _prop_Top := 110;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -1656,7 +1557,7 @@ begin
   Button_46490F0 := THIButton.Create(Panel_24CBED0.Control);
   with Button_46490F0 do begin
     ManFlags := 0;
-    _prop_Left := 125;
+    _prop_Left := 155;
     _prop_Top := 110;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -1683,7 +1584,7 @@ begin
   Button_4648330 := THIButton.Create(Panel_24CBED0.Control);
   with Button_4648330 do begin
     ManFlags := 0;
-    _prop_Left := 160;
+    _prop_Left := 190;
     _prop_Top := 110;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -1728,7 +1629,7 @@ begin
   Button_4649050 := THIButton.Create(Panel_24CBED0.Control);
   with Button_4649050 do begin
     ManFlags := 0;
-    _prop_Left := 110;
+    _prop_Left := 140;
     _prop_Top := 135;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -1760,7 +1661,7 @@ begin
   Button_46492D0 := THIButton.Create(Panel_24CBED0.Control);
   with Button_46492D0 do begin
     ManFlags := 0;
-    _prop_Left := 145;
+    _prop_Left := 175;
     _prop_Top := 135;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -1787,7 +1688,7 @@ begin
   Button_4649230 := THIButton.Create(Panel_24CBED0.Control);
   with Button_4649230 do begin
     ManFlags := 0;
-    _prop_Left := 180;
+    _prop_Left := 210;
     _prop_Top := 135;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -1854,7 +1755,6 @@ begin
   Edit_24CC8D0._event_onChange             := _DoEvent(Edit_24CC510._work_doText,0);
   ClipboardHook_24C0630._data_Text         := _DoEvent(Edit_24CC830._var_Text,0);
   Edit_24CC970._event_onChange             := _DoEvent(Edit_24CCAB0._work_doText,0);
-  ComboBox_24CCA10._event_onClick          := _DoEvent(StrCat_24C06C8._work_doStrCat,0);
   Edit_24CCAB0._event_onChange             := _DoEvent(Edit_24CCE70._work_doText,0);
   Button_24CCBF0._event_onClick            := _DoEvent(StrCat_24C0928._work_doStrCat,0);
   Button_24CCD30._event_onClick            := _DoEvent(StrCat_24C0760._work_doStrCat,0);
@@ -1875,11 +1775,9 @@ begin
   Edit_24CC510._event_onChange             := _DoEvent(Edit_24CC970._work_doText,0);
   StrCat_24C0928._event_onStrCat           := _DoEvent(Edit_24CC010._work_doText,0);
   StrCat_24C0928._data_Str1                := _DoEvent(Edit_24CC3D0._var_Text,0);
-  Button_24CD2D0._event_onClick            := _DoEvent(Hub_25388F0.doEvent,0);
   Hub_25388F0.onEvent[0]                   := _DoEvent(StrCat_24C09C0._work_doStrCat,0);
   Hub_25388F0.onEvent[1]                   := _DoEvent(StrCat_24C0A58._work_doStrCat,0);
   StrCat_24C0A58._event_onStrCat           := _DoEvent(Edit_24CC830._work_doText,0);
-  StrCat_24C0A58._data_Str2                := _DoEvent(Edit_24CD230._var_Text,0);
   Edit_24CD370._event_onChange             := _DoEvent(Edit_24CCFB0._work_doText,0);
   Button_24CD410._event_onClick            := _DoEvent(Hub_25389A0.doEvent,0);
   Hub_25389A0.onEvent[0]                   := _DoEvent(ClipboardHook_24C0630._work_doSetText,0);
@@ -1950,11 +1848,6 @@ begin
   Edit_24CC8D0._prop_Layout := nil;
   Edit_24CC970._prop_HintManager := nil;
   Edit_24CC970._prop_Layout := nil;
-  ComboBox_24CCA10._prop_HintManager := nil;
-  ComboBox_24CCA10._prop_Layout := nil;
-  ComboBox_24CCA10._prop_IndexManager := nil;
-  ComboBox_24CCA10._prop_BoxDrawManager := nil;
-  ComboBox_24CCA10._prop_IconsManager := nil;
   Edit_24CCAB0._prop_HintManager := nil;
   Edit_24CCAB0._prop_Layout := nil;
   Edit_24CCB50._prop_HintManager := nil;
@@ -1975,10 +1868,6 @@ begin
   Edit_24CCFB0._prop_Layout := nil;
   Edit_24CC510._prop_HintManager := nil;
   Edit_24CC510._prop_Layout := nil;
-  Edit_24CD230._prop_HintManager := nil;
-  Edit_24CD230._prop_Layout := nil;
-  Button_24CD2D0._prop_HintManager := nil;
-  Button_24CD2D0._prop_Layout := nil;
   Edit_24CD370._prop_HintManager := nil;
   Edit_24CD370._prop_Layout := nil;
   Button_24CD410._prop_HintManager := nil;
@@ -2053,8 +1942,6 @@ begin
   StrCat_24C0A58.Destroy;
   Hub_25388F0.Destroy;
   StrCat_24C09C0.Destroy;
-  Button_24CD2D0.Destroy;
-  Edit_24CD230.Destroy;
   StrCat_24C0928.Destroy;
   Edit_24CC510.Destroy;
   Hub_2538840.Destroy;
@@ -2071,7 +1958,6 @@ begin
   Edit_24CCB50.Destroy;
   Edit_24CCAB0.Destroy;
   StrCat_24C06C8.Destroy;
-  ComboBox_24CCA10.Destroy;
   Edit_24CC970.Destroy;
   ClipboardHook_24C0630.Destroy;
   Edit_24CC8D0.Destroy;

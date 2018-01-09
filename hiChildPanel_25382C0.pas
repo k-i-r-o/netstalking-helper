@@ -139,7 +139,7 @@ begin
     _prop_TabOrder := 0;
     _prop_Ctl3D := 1;
     _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
+    _prop_Name := PChar('FormHydraUb'#0);
     _prop_Hint := PChar(#0);
     _prop_WidthScale := 0;
     _prop_HeightScale := 0;
@@ -246,7 +246,7 @@ begin
   Button_24C82D0 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24C82D0 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 20;
     _prop_Width := 80;
     _prop_Height := 20;
@@ -273,7 +273,7 @@ begin
   Button_24C8370 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24C8370 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 120;
     _prop_Width := 80;
     _prop_Height := 20;
@@ -378,7 +378,7 @@ begin
   Button_24C8550 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24C8550 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 145;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -447,7 +447,7 @@ begin
   Button_24C8690 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24C8690 do begin
     ManFlags := 0;
-    _prop_Left := 295;
+    _prop_Left := 325;
     _prop_Top := 81;
     _prop_Width := 75;
     _prop_Height := 20;
@@ -474,7 +474,7 @@ begin
   Button_24C87D0 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24C87D0 do begin
     ManFlags := 0;
-    _prop_Left := 70;
+    _prop_Left := 100;
     _prop_Top := 145;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -501,7 +501,7 @@ begin
   Button_24C8870 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24C8870 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 170;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -528,7 +528,7 @@ begin
   Button_24C8910 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24C8910 do begin
     ManFlags := 0;
-    _prop_Left := 70;
+    _prop_Left := 100;
     _prop_Top := 170;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -723,7 +723,7 @@ begin
   ComboBox_24C9130 := THIComboBox.Create(Panel_24C7C90.Control);
   with ComboBox_24C9130 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 220;
     _prop_Width := 75;
     _prop_Height := 21;
@@ -797,7 +797,7 @@ begin
   Edit_24C98B0 := THIEdit.Create(Panel_24C7C90.Control);
   with Edit_24C98B0 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 195;
     _prop_Width := 90;
     _prop_Height := 20;
@@ -833,7 +833,7 @@ begin
   Button_24C99F0 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24C99F0 do begin
     ManFlags := 0;
-    _prop_Left := 240;
+    _prop_Left := 270;
     _prop_Top := 195;
     _prop_Width := 40;
     _prop_Height := 20;
@@ -860,7 +860,7 @@ begin
   Edit_24C9A90 := THIEdit.Create(Panel_24C7C90.Control);
   with Edit_24C9A90 do begin
     ManFlags := 0;
-    _prop_Left := 140;
+    _prop_Left := 170;
     _prop_Top := 195;
     _prop_Width := 50;
     _prop_Height := 20;
@@ -896,7 +896,7 @@ begin
   Button_24C9B30 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24C9B30 do begin
     ManFlags := 0;
-    _prop_Left := 110;
+    _prop_Left := 140;
     _prop_Top := 195;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -922,7 +922,7 @@ begin
   Button_24C9BD0 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24C9BD0 do begin
     ManFlags := 0;
-    _prop_Left := 190;
+    _prop_Left := 220;
     _prop_Top := 195;
     _prop_Width := 30;
     _prop_Height := 20;
@@ -1123,7 +1123,7 @@ begin
   Label_24CA0D0 := THILabel.Create(Panel_24C7C90.Control);
   with Label_24CA0D0 do begin
     ManFlags := 0;
-    _prop_Left := 51;
+    _prop_Left := 81;
     _prop_Top := 145;
     _prop_Width := 20;
     _prop_Height := 20;
@@ -1158,7 +1158,7 @@ begin
   Label_24CA170 := THILabel.Create(Panel_24C7C90.Control);
   with Label_24CA170 do begin
     ManFlags := 0;
-    _prop_Left := 51;
+    _prop_Left := 81;
     _prop_Top := 170;
     _prop_Width := 20;
     _prop_Height := 24;
@@ -1193,7 +1193,7 @@ begin
   Label_24CA210 := THILabel.Create(Panel_24C7C90.Control);
   with Label_24CA210 do begin
     ManFlags := 0;
-    _prop_Left := 221;
+    _prop_Left := 251;
     _prop_Top := 193;
     _prop_Width := 20;
     _prop_Height := 24;
@@ -1228,7 +1228,7 @@ begin
   Edit_24CA2B0 := THIEdit.Create(Panel_24C7C90.Control);
   with Edit_24CA2B0 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 245;
     _prop_Width := 220;
     _prop_Height := 20;
@@ -1264,7 +1264,7 @@ begin
   Button_24CA350 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24CA350 do begin
     ManFlags := 0;
-    _prop_Left := 240;
+    _prop_Left := 270;
     _prop_Top := 245;
     _prop_Width := 40;
     _prop_Height := 20;
@@ -1378,7 +1378,7 @@ begin
   Button_24CA530 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24CA530 do begin
     ManFlags := 0;
-    _prop_Left := 130;
+    _prop_Left := 160;
     _prop_Top := 70;
     _prop_Width := 55;
     _prop_Height := 20;
@@ -1405,7 +1405,7 @@ begin
   Button_24CA5D0 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24CA5D0 do begin
     ManFlags := 0;
-    _prop_Left := 130;
+    _prop_Left := 160;
     _prop_Top := 95;
     _prop_Width := 55;
     _prop_Height := 20;
@@ -1432,7 +1432,7 @@ begin
   Button_24CA670 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24CA670 do begin
     ManFlags := 0;
-    _prop_Left := 205;
+    _prop_Left := 235;
     _prop_Top := 70;
     _prop_Width := 55;
     _prop_Height := 20;
@@ -1459,7 +1459,7 @@ begin
   Button_24CA710 := THIButton.Create(Panel_24C7C90.Control);
   with Button_24CA710 do begin
     ManFlags := 0;
-    _prop_Left := 205;
+    _prop_Left := 235;
     _prop_Top := 95;
     _prop_Width := 55;
     _prop_Height := 20;
@@ -1486,7 +1486,7 @@ begin
   Label_24CA7B0 := THILabel.Create(Panel_24C7C90.Control);
   with Label_24CA7B0 do begin
     ManFlags := 0;
-    _prop_Left := 275;
+    _prop_Left := 305;
     _prop_Top := 81;
     _prop_Width := 20;
     _prop_Height := 24;
@@ -1521,7 +1521,7 @@ begin
   Edit_24CA850 := THIEdit.Create(Panel_24C7C90.Control);
   with Edit_24CA850 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 95;
     _prop_Width := 110;
     _prop_Height := 20;
@@ -1557,7 +1557,7 @@ begin
   Edit_24CA8F0 := THIEdit.Create(Panel_24C7C90.Control);
   with Edit_24CA8F0 do begin
     ManFlags := 0;
-    _prop_Left := 20;
+    _prop_Left := 50;
     _prop_Top := 70;
     _prop_Width := 110;
     _prop_Height := 20;
@@ -1737,7 +1737,7 @@ begin
   Label_24CAB70 := THILabel.Create(Panel_24C7C90.Control);
   with Label_24CAB70 do begin
     ManFlags := 0;
-    _prop_Left := 186;
+    _prop_Left := 216;
     _prop_Top := 70;
     _prop_Width := 20;
     _prop_Height := 24;
@@ -1772,7 +1772,7 @@ begin
   Label_24CAC10 := THILabel.Create(Panel_24C7C90.Control);
   with Label_24CAC10 do begin
     ManFlags := 0;
-    _prop_Left := 186;
+    _prop_Left := 216;
     _prop_Top := 95;
     _prop_Width := 20;
     _prop_Height := 24;
@@ -1807,7 +1807,7 @@ begin
   Label_24CACB0 := THILabel.Create(Panel_24C7C90.Control);
   with Label_24CACB0 do begin
     ManFlags := 0;
-    _prop_Left := 260;
+    _prop_Left := 290;
     _prop_Top := 75;
     _prop_Width := 16;
     _prop_Height := 41;

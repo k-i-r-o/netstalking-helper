@@ -12,6 +12,7 @@ uses
   hiHub,
   hiChildPanel_25382C0,
   hiChildPanel_2538790,
+  hiChildPanel_2538A50,
 kol,Share;
 
 type
@@ -29,6 +30,11 @@ type
   Label_24CBE30:THILabel;
   Hub_25386E0:THIHub;
   ChildPanel_2538790:THIChildPanel;
+  CheckBoxRush_24CDAF0:THICheckBoxRush;
+  Label_24CD190:THILabel;
+  Label_24CDB90:THILabel;
+  ChildPanel_2538A50:THIChildPanel;
+  Hub_253BBD0:THIHub;
     constructor Create;
     destructor Destroy; override;
   end;
@@ -60,7 +66,7 @@ begin
     _prop_TabOrder := 0;
     _prop_Ctl3D := 1;
     _prop_WinStyle := 0;
-    _prop_Name := PChar('Helper'#0);
+    _prop_Name := PChar('HelperMainForm'#0);
     _prop_Hint := PChar(#0);
     _prop_WidthScale := 0;
     _prop_HeightScale := 0;
@@ -108,7 +114,7 @@ begin
     _prop_TabOrder := 0;
     _prop_Ctl3D := 1;
     _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
+    _prop_Name := PChar('ChekBoxHydraUb'#0);
     _prop_Hint := PChar(#0);
     _prop_WidthScale := 0;
     _prop_HeightScale := 0;
@@ -169,7 +175,7 @@ begin
   with CheckBoxRush_24CBBB0 do begin
     ManFlags := 0;
     _prop_Left := 10;
-    _prop_Top := 70;
+    _prop_Top := 90;
     _prop_Width := 20;
     _prop_Height := 20;
     _prop_Align := caNone;
@@ -182,7 +188,7 @@ begin
     _prop_TabOrder := 0;
     _prop_Ctl3D := 1;
     _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
+    _prop_Name := PChar('CheckBoxNmap'#0);
     _prop_Hint := PChar(#0);
     _prop_WidthScale := 0;
     _prop_HeightScale := 0;
@@ -232,7 +238,7 @@ begin
     ManFlags := 0;
     _prop_Left := 30;
     _prop_Top := 40;
-    _prop_Width := 48;
+    _prop_Width := 93;
     _prop_Height := 24;
     _prop_Align := caNone;
     _prop_Color := -16777201;
@@ -244,7 +250,7 @@ begin
     _prop_TabOrder := 0;
     _prop_Ctl3D := 1;
     _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
+    _prop_Name := PChar('NameBlackHydraUb'#0);
     _prop_Hint := PChar(#0);
     _prop_WidthScale := 0;
     _prop_HeightScale := 0;
@@ -254,7 +260,7 @@ begin
     _prop_MinOwn := 0;
     _prop_MinRest := 0;
     _prop_Transparent := False;
-    _prop_Caption := PChar('hydra'#0);
+    _prop_Caption := PChar('hydra Unix'#0);
     _prop_AutoSize := True;
     _prop_Alignment := taLeft;
     _prop_ColorHover := 0;
@@ -266,7 +272,7 @@ begin
   with Label_24CBCF0 do begin
     ManFlags := 0;
     _prop_Left := 30;
-    _prop_Top := 70;
+    _prop_Top := 90;
     _prop_Width := 48;
     _prop_Height := 24;
     _prop_Align := caNone;
@@ -279,7 +285,7 @@ begin
     _prop_TabOrder := 0;
     _prop_Ctl3D := 1;
     _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
+    _prop_Name := PChar('NamrBlackNmap'#0);
     _prop_Hint := PChar(#0);
     _prop_WidthScale := 0;
     _prop_HeightScale := 0;
@@ -302,7 +308,7 @@ begin
     ManFlags := 0;
     _prop_Left := 30;
     _prop_Top := 40;
-    _prop_Width := 48;
+    _prop_Width := 88;
     _prop_Height := 24;
     _prop_Align := caNone;
     _prop_Color := -16777201;
@@ -314,7 +320,7 @@ begin
     _prop_TabOrder := 0;
     _prop_Ctl3D := 1;
     _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
+    _prop_Name := PChar('NameHydraUnixRed'#0);
     _prop_Hint := PChar(#0);
     _prop_WidthScale := 0;
     _prop_HeightScale := 0;
@@ -324,7 +330,7 @@ begin
     _prop_MinOwn := 0;
     _prop_MinRest := 0;
     _prop_Transparent := False;
-    _prop_Caption := PChar('hydra '#0);
+    _prop_Caption := PChar('hydra Unix'#0);
     _prop_AutoSize := True;
     _prop_Alignment := taLeft;
     _prop_ColorHover := 0;
@@ -342,7 +348,7 @@ begin
   with Label_24CBE30 do begin
     ManFlags := 0;
     _prop_Left := 30;
-    _prop_Top := 70;
+    _prop_Top := 90;
     _prop_Width := 48;
     _prop_Height := 24;
     _prop_Align := caNone;
@@ -355,7 +361,7 @@ begin
     _prop_TabOrder := 0;
     _prop_Ctl3D := 1;
     _prop_WinStyle := 0;
-    _prop_Name := PChar(#0);
+    _prop_Name := PChar('NameNmapRed'#0);
     _prop_Hint := PChar(#0);
     _prop_WidthScale := 0;
     _prop_HeightScale := 0;
@@ -387,6 +393,153 @@ begin
     SetLength(Events,0);
     SetLength(Datas, 0);
   end;
+//Init for CheckBoxRush;
+  CheckBoxRush_24CDAF0 := THICheckBoxRush.Create(MainForm_24C78D0.Control);
+  with CheckBoxRush_24CDAF0 do begin
+    ManFlags := 0;
+    _prop_Left := 10;
+    _prop_Top := 65;
+    _prop_Width := 20;
+    _prop_Height := 20;
+    _prop_Align := caNone;
+    _prop_Color := -16777201;
+    _prop_Font := hiCreateFont('MS Sans Serif',8,0,0,1);
+    _prop_ParentFont := False;
+    _prop_Visible := True;
+    _prop_Enabled := True;
+    _prop_Cursor := crDefault;
+    _prop_TabOrder := 0;
+    _prop_Ctl3D := 1;
+    _prop_WinStyle := 0;
+    _prop_Name := PChar('CheckBoxHydra'#0);
+    _prop_Hint := PChar(#0);
+    _prop_WidthScale := 0;
+    _prop_HeightScale := 0;
+    _prop_ColorFrom := 16777215;
+    _prop_ColorTo := 15780518;
+    _prop_ColorText := 0;
+    _prop_BorderColor := 10789024;
+    _prop_ColorShadow := 16777215;
+    _prop_ShadowOffset := 0;
+    _prop_GradientStyle := 5;
+    _prop_BorderWidth := 1;
+    _prop_ColorFromOver := 16777215;
+    _prop_ColorToOver := 15780518;
+    _prop_ColorTextOver := 0;
+    _prop_BorderColorOver := 8421504;
+    _prop_ColorShadowOver := 8421504;
+    _prop_ShadowOffsetOver := 1;
+    _prop_GradientStyleOver := 5;
+    _prop_BorderWidthOver := 1;
+    _prop_ColorFromDown := 15780518;
+    _prop_ColorToDown := 16777215;
+    _prop_ColorTextDown := 0;
+    _prop_BorderColorDown := 10789024;
+    _prop_ColorShadowDown := 8421504;
+    _prop_ShadowOffsetDown := -1;
+    _prop_GradientStyleDown := 5;
+    _prop_BorderWidthDown := 1;
+    _prop_ColorFromDis := 16777215;
+    _prop_ColorToDis := 8421504;
+    _prop_ColorTextDis := 8421504;
+    _prop_BorderColorDis := 10789024;
+    _prop_ColorShadowDis := 16777215;
+    _prop_ShadowOffsetDis := 1;
+    _prop_GradientStyleDis := 5;
+    _prop_BorderWidthDis := 1;
+    _prop_UpdateSpeed := 2;
+    _prop_Transparent := False;
+    _prop_Checked := 1;
+    _prop_Caption := PChar(#0);
+    _prop_CheckMetric := 15;
+    _prop_ColorCheck := 15954028;
+    Init;
+  end;
+//Init for Label;
+  Label_24CD190 := THILabel.Create(MainForm_24C78D0.Control);
+  with Label_24CD190 do begin
+    ManFlags := 0;
+    _prop_Left := 30;
+    _prop_Top := 65;
+    _prop_Width := 48;
+    _prop_Height := 24;
+    _prop_Align := caNone;
+    _prop_Color := -16777201;
+    _prop_Font := hiCreateFont('MS Sans Serif',13,1,0,1);
+    _prop_ParentFont := False;
+    _prop_Visible := True;
+    _prop_Enabled := True;
+    _prop_Cursor := crDefault;
+    _prop_TabOrder := 0;
+    _prop_Ctl3D := 1;
+    _prop_WinStyle := 0;
+    _prop_Name := PChar('NameBlackHydra'#0);
+    _prop_Hint := PChar(#0);
+    _prop_WidthScale := 0;
+    _prop_HeightScale := 0;
+    _prop_ModeSp := spNone;
+    _prop_SizeSp := 4;
+    _prop_ColorSp := -16777201;
+    _prop_MinOwn := 0;
+    _prop_MinRest := 0;
+    _prop_Transparent := False;
+    _prop_Caption := PChar('hydra'#0);
+    _prop_AutoSize := True;
+    _prop_Alignment := taLeft;
+    _prop_ColorHover := 0;
+    _prop_Underline := False;
+    Init;
+  end;
+//Init for Label;
+  Label_24CDB90 := THILabel.Create(MainForm_24C78D0.Control);
+  with Label_24CDB90 do begin
+    ManFlags := 0;
+    _prop_Left := 30;
+    _prop_Top := 65;
+    _prop_Width := 48;
+    _prop_Height := 24;
+    _prop_Align := caNone;
+    _prop_Color := -16777201;
+    _prop_Font := hiCreateFont('MS Sans Serif',13,1,255,1);
+    _prop_ParentFont := False;
+    _prop_Visible := False;
+    _prop_Enabled := True;
+    _prop_Cursor := crDefault;
+    _prop_TabOrder := 0;
+    _prop_Ctl3D := 1;
+    _prop_WinStyle := 0;
+    _prop_Name := PChar('NameHydraRed'#0);
+    _prop_Hint := PChar(#0);
+    _prop_WidthScale := 0;
+    _prop_HeightScale := 0;
+    _prop_ModeSp := spNone;
+    _prop_SizeSp := 4;
+    _prop_ColorSp := -16777201;
+    _prop_MinOwn := 0;
+    _prop_MinRest := 0;
+    _prop_Transparent := False;
+    _prop_Caption := PChar('hydra'#0);
+    _prop_AutoSize := True;
+    _prop_Alignment := taLeft;
+    _prop_ColorHover := 0;
+    _prop_Underline := False;
+    Init;
+  end;
+//Init for ChildPanel;
+  ChildPanel_2538A50 := THIChildPanel.Create(MainForm_24C78D0.Control);
+  with ChildPanel_2538A50 do begin
+    _prop_FirstUsage := False;
+    Init;
+    ParentClass := Self;
+    SetLength(Events,0);
+    SetLength(Datas, 0);
+  end;
+//Init for Hub;
+  Hub_253BBD0 := THIHub.Create;
+  with Hub_253BBD0 do begin
+    _prop_InCount := 1;
+    _prop_OutCount := 2;
+  end;
  //%multi%
  //Make all connection in scheme
   CheckBoxRush_24CB930._event_onCheck      := _DoEvent(Hub_2538630.doEvent,0);
@@ -395,6 +548,9 @@ begin
   Hub_2538630.onEvent[1]                   := _DoEvent(ChildPanel_25382C0.doWork,0);
   Hub_25386E0.onEvent[0]                   := _DoEvent(Label_24CBE30._work_doVisible,1);
   Hub_25386E0.onEvent[1]                   := _DoEvent(ChildPanel_2538790.doWork,0);
+  CheckBoxRush_24CDAF0._event_onCheck      := _DoEvent(Hub_253BBD0.doEvent,0);
+  Hub_253BBD0.onEvent[0]                   := _DoEvent(Label_24CDB90._work_doVisible,1);
+  Hub_253BBD0.onEvent[1]                   := _DoEvent(ChildPanel_2538A50.doWork,0);
   MainForm_24C78D0._prop_HintManager := nil;
   MainForm_24C78D0._prop_Layout := nil;
   MainForm_24C78D0._prop_TransparentManager := nil;
@@ -413,11 +569,23 @@ begin
   Label_24CBE30._prop_HintManager := nil;
   Label_24CBE30._prop_Layout := nil;
   ChildPanel_2538790.OnCreate := Create_hiChildPanel_2538790;
+  CheckBoxRush_24CDAF0._prop_HintManager := nil;
+  CheckBoxRush_24CDAF0._prop_Layout := nil;
+  Label_24CD190._prop_HintManager := nil;
+  Label_24CD190._prop_Layout := nil;
+  Label_24CDB90._prop_HintManager := nil;
+  Label_24CDB90._prop_Layout := nil;
+  ChildPanel_2538A50.OnCreate := Create_hiChildPanel_2538A50;
   MainForm_24C78D0.Control.Tabulate;
 end;
 
 destructor TClassMainForm_24C78D0.Destroy;
 begin
+  Hub_253BBD0.Destroy;
+  ChildPanel_2538A50.Destroy;
+  Label_24CDB90.Destroy;
+  Label_24CD190.Destroy;
+  CheckBoxRush_24CDAF0.Destroy;
   ChildPanel_2538790.Destroy;
   Hub_25386E0.Destroy;
   Label_24CBE30.Destroy;
